@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f7fe;
+  padding: 2em;
+  margin: 2em;
+  max-width: 400px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 2em #e6e9f9;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.submit-btn {
+  height: 40px;
+  margin-top: 2em;
+  border: 0;
+  border-radius: 12px;
+  background-color: #3e4684;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
