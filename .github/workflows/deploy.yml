@@ -23,10 +23,6 @@ jobs:
 
       - run: npm ci
 
-      - run: |
-          git config user.name $user_name
-          git config user.email $user_email
-          npm run deploy
-        env:
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+      - run: npm run deploy
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
