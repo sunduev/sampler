@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
+          cache: 'npm'
 
       - run: npm ci
 
@@ -30,7 +30,7 @@ jobs:
           git remote set-url origin https://${deploy_token}@github.com/${repository}
           npm run deploy
         env:
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
           deploy_token: ${{ secrets.DEPLOY_PAT }}
           repository: ${{ github.repository }}

@@ -1,4 +1,4 @@
-import { FormControl, FormValues } from "./types";
+import { FormControl, FormValues } from './types';
 
 export function mapInitialValues(
   entries: Array<[string, FormControl]>
@@ -6,7 +6,7 @@ export function mapInitialValues(
   return entries.reduce(
     (result, [key, control]) => ({
       ...result,
-      [key]: control.defaultValue ?? "",
+      [key]: control.defaultValue ?? '',
     }),
     {}
   );
@@ -15,7 +15,7 @@ export function mapInitialValues(
 export function mapInputType(type: string): string {
   const lowered = type.toLowerCase();
 
-  if (lowered.startsWith("input")) {
+  if (lowered.startsWith('input')) {
     return lowered.slice(5);
   }
 

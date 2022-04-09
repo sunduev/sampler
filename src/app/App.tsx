@@ -1,6 +1,6 @@
-import { Form } from "../components/form";
+import { Form } from '../components/form';
 
-import "./App.css";
+import './App.css';
 
 export function App() {
   return (

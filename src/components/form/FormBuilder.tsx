@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import "./FormBuilder.css";
-import { FormBuilderConfig, FormValues } from "./types";
-import { mapInitialValues, mapInputType } from "./utils";
+import './FormBuilder.css';
+import { FormBuilderConfig, FormValues } from './types';
+import { mapInitialValues, mapInputType } from './utils';
 
 type Props = {
   config: FormBuilderConfig;
@@ -28,7 +28,7 @@ export function FormBuilder(props: Props) {
       id={id}
       type={mapInputType(control.type)}
       label={control.label}
-      value={values[id] ?? ""}
+      value={values[id] ?? ''}
       onChange={(value) => {
         setValues((prevValues) => ({
           ...prevValues,
